@@ -72,6 +72,7 @@ setup(
             'behave_test = setuptools_behave:behave_test'
         ]
     },
+    data_files=[('behave/formatter/', ['behave/formatter/report.css'])],
     install_requires=requirements,
     test_suite='nose.collector',
     tests_require=['nose>=1.3', 'mock>=1.0', 'PyHamcrest>=1.8'],

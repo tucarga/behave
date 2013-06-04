@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import argparse
+import codecs
 import ConfigParser
 import logging
 import shlex
