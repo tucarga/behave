@@ -183,7 +183,7 @@ options = [
                   override a configuration file setting.""")),
 
     (('--logging-level',),
-     dict(type=LogLevel.parse_type,
+     dict(type=str,
           help="""Specify a level to capture logging at. The default
                   is INFO - capturing everything.""")),
 
