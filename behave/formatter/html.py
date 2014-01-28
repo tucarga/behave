@@ -161,7 +161,8 @@ class HTMLFormatter(Formatter):
                 else:
                     bold.tail = result.name[text_start:argument.start]
                 bold = ET.SubElement(step_text, 'b')
-                bold.text = str(argument.value)
+                value = unicode(argument.value.encode('utf-8'), 'utf-8')
+                bold.text = value
                 text_start = argument.end
             # Add remaining tail
             bold.tail = result.name[self.arguments[-1].end:]
